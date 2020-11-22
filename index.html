@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+h1,p {
+    text-align: center;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+.col-25 {
+          float: left;
+          width: 50%;
+          margin-top: 6px;
+        }
+        
+        .col-75 {
+          float: left;
+          width: 50%;
+          margin-top: 6px;
+        }
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">LANDING PAGE</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="inner.html">SUBMIT</a></li>
+        <li><a href="inner1.html">PRODUCT</a></li>
+      </ul>
+    </nav>
+    <br>
+    <br>
+    <div>
+        <h1>LANDING PAGE</h1>
+        <p>The iPhone is a line of touchscreen-based smartphones designed and marketed by Apple Inc. that use Apple's iOS mobile operating system. The first-generation iPhone was announced by Apple co-founder Steve Jobs on January 9, 2007. Since then Apple has annually released new iPhone models and iOS updates.</p>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-25">
+          <h1>PRODUCT TITLE</h1>
+          <p>The iPhone is a line of touchscreen-based smartphones designed and marketed by Apple Inc. that use Apple's iOS mobile operating system. The first-generation iPhone was announced by Apple co-founder Steve Jobs on January 9, 2007. Since then Apple has annually released new iPhone models and iOS updates.</p>
+
+        </div>
+        <div class="col-75">
+          <h1>PRODUCT TITLE</h1>
+          <p>The iPhone is a line of touchscreen-based smartphones designed and marketed by Apple Inc. that use Apple's iOS mobile operating system. The first-generation iPhone was announced by Apple co-founder Steve Jobs on January 9, 2007. Since then Apple has annually released new iPhone models and iOS updates.</p>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-25">
+              <h1>PRODUCT TITLE</h1>
+              <p>The iPhone is a line of touchscreen-based smartphones designed and marketed by Apple Inc. that use Apple's iOS mobile operating system. The first-generation iPhone was announced by Apple co-founder Steve Jobs on January 9, 2007. Since then Apple has annually released new iPhone models and iOS updates.</p>
+    
+            </div>
+            <div class="col-75">
+              <h1>PRODUCT TITLE</h1>
+              <p>The iPhone is a line of touchscreen-based smartphones designed and marketed by Apple Inc. that use Apple's iOS mobile operating system. The first-generation iPhone was announced by Apple co-founder Steve Jobs on January 9, 2007. Since then Apple has annually released new iPhone models and iOS updates.</p>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <h1>PRODUCT TITLE</h1>
+                <p>The iPhone is a line of touchscreen-based smartphones designed and marketed by Apple Inc. that use Apple's iOS mobile operating system. The first-generation iPhone was announced by Apple co-founder Steve Jobs on January 9, 2007. Since then Apple has annually released new iPhone models and iOS updates.</p>
+      
+              </div>
+              <div class="col-75">
+                <h1>PRODUCT TITLE</h1>
+                <p>The iPhone is a line of touchscreen-based smartphones designed and marketed by Apple Inc. that use Apple's iOS mobile operating system. The first-generation iPhone was announced by Apple co-founder Steve Jobs on January 9, 2007. Since then Apple has annually released new iPhone models and iOS updates.</p>
+              </div>
+        
+      </div>
+  </body>
+</html>
